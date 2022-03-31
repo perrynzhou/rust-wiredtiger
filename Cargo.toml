@@ -1,15 +1,18 @@
 [package]
-name = "rust-wired-tiger"
-version = "0.1.0"
-authors = ["dschenkelman <damian.schenkelman@gmail.com>"]
+name = "rust_wiredtiger" # the name of the package
+version = "0.1.0"    # the current version, obeying semver
+authors = ["perrynzhou"]
+edition = "2018"
 
 [dependencies]
-libc = "0.1"
+chrono = "0.4"
+rand = "0.8.4"
+circular-queue = "0.2.6"
 
-[lib]
-name = "wiredtiger"
-path = "src/lib.rs"
+[build-dependencies]
+bindgen = "0.59.0"
 
 [[bin]]
-name = "wiredtiger_sample"
+name = "rust_wiredtiger"
 path = "src/main.rs"
+

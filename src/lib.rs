@@ -1,12 +1,4 @@
-// Copyright 2015 Damian Schenkelman
-
-#![crate_name = "wiredtiger"]
-#![crate_type = "lib"]
-
-extern crate libc;
-
-mod wiredtiger_def;
-
-/// A friendly Rust wrapper for the Wired Tiger C library
-
+#![allow(non_upper_case_globals)]
+#![allow(non_camel_case_types)]
+#![allow(non_snake_case)]
 pub mod wiredtiger;
