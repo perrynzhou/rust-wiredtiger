@@ -16,7 +16,6 @@ fn main() {
     let wt_lib_str: &str = "/usr/local/lib";
     let inc_arg = format!("-I{}", wt_inc_str);
 
-
     // This doesn't seem to work, we need to set the environment path before
     // calling "cargo test".
     //env::set_var("LD_LIBRARY_PATH", wt_lib_str);
@@ -45,4 +44,3 @@ fn main() {
         .write_to_file(out_path.join("bindings.rs"))
         .expect("Couldn't write bindings!");
 }
-
